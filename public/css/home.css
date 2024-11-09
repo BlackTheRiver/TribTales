@@ -90,7 +90,7 @@
     100% { background-position: 550px 100%; }
   }
   
-  @keyframes parallax_bike {
+  @keyframes parallax_car {
     0% { background-position: -300px 100%; }
     100% { background-position: 2000px 100%; }
   }
