@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .hero {
+    width: 100%;
+    min-height: 450px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #faf9fa, #de99e7); 
+  }
+  
+  
+  .layer-1, .layer-2, .layer-3, .layer-4, .layer-5, .layer-6 {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: auto;
+  }
+  
+  .layer-1 {
+    animation: parallax_fg linear 20s infinite both;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/24650/1.png) 0 100% repeat-x;
+    background-size: auto 136px;
+  }
+  .layer-2 {
+    animation: parallax_fg linear 30s infinite both;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/24650/2.png) 0 100% repeat-x;
+    background-size: auto 145px;
+  }
+  .layer-3 {
+    animation: parallax_fg linear 55s infinite both;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/24650/3.png) 0 100% repeat-x;
+    background-size: auto 158px;
+  }
+  .layer-4 {
+    animation: parallax_fg linear 75s infinite both;
+    background: url(new.png) 0 100% repeat-x;
+    background-size: auto 468px;
+  }
+  .layer-5 {
+    animation: parallax_fg linear 95s infinite both;
+    background: url(new.png) 0 100% repeat-x;
+    background-size: auto 311px;
+  }
+  .layer-6 {
+    animation: parallax_fg linear 120s infinite both;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/24650/6.png) 0 100% repeat-x;
+    background-size: auto 222px;
+  }
+  
+  .car-1 {
+    background: url(car2.png) 0 100% no-repeat;
+    z-index: 1;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background-size: auto 100px;
+  }
+  .car-2 {
+    background: url(car.png) 0 100% no-repeat;
+    z-index: 1;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: auto 75px;
+  }
+  
+  .car-1 {
+    animation: parallax_car linear 10s infinite both;
+  }
+  
+  .car-2 {
+    animation: parallax_car linear 15s infinite both;
+  }
+  
+  @keyframes parallax_fg {
+    0% { background-position: 2765px 100%; }
+    100% { background-position: 550px 100%; }
+  }
+  
+  @keyframes parallax_bike {
+    0% { background-position: -300px 100%; }
+    100% { background-position: 2000px 100%; }
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  
+  .logo img {
+    width: 150px;  
+    height: auto;
+  }
+  
+  
+  @media (max-width: 700px) {
+    .logo img {
+      max-width: 90%;
+    }
+  }
+  
+  nav {
+    background-color: #2f1224;
+    overflow: hidden;
+  }
+  
+  nav ul {
+    list-style: none;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    padding: 10px 20px;
+  }
+  
+  @media (max-width: 700px) {
+    nav li {
+      width: 50%;
+      text-align: center;
+    }
+  }
+  
+  nav a {
+    font-weight: 700;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .dark-bg {
+    background-color: #ce1672;
+    padding: 50px 50px;
+  }
+  
+  .dark-bg img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+  
+  .light-bg {
+    background-color: #fff;
+    padding: 50px 50px;
+  }
+  
+  .light-bg img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+  
+  .extra {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #28122f;
+    letter-spacing: 0px;
+    line-height: 27px;
+  }
+  
